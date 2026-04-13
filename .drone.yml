@@ -27,6 +27,7 @@ steps:
   - name: publish-image
     image: plugins/kaniko
     settings:
+      registry: ghcr.io
       repo: ghcr.io/jkawohl/backup-restic-backup
       username:
         from_secret: ghcr_username
